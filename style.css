@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  background-image: url(./imag/dany2.png);
+  background-position: top center;
+}
+
+
+header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+
+header img{
+  margin: auto;
+  /*margin-top: 200px;*/
+  width: 300px;
+  background: linear-gradient(90deg,  rgba(71,87,255,1) 65%, rgba(187,18,190,1) 28%) ;
+  display: flex;
+  border-radius: 40%;
+  padding: 4px;
+}
+
+main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  border-radius: 50%;
+}
+
+
+button{
+  background: linear-gradient(90deg, rgba(187,18,190,1) 28%, rgba(71,87,255,1) 65%);
+  padding:20px 40px;
+  font-size:24px;
+  color:white;
+  border:none;
+  border-radius:10px;
+  cursor:pointer;
+
+}
+
+@keyframes danielle {
+  from{
+      transform: scale(1);
+  }
+
+  to{
+      transform: scale(1.05);
+  }
+}
+
+button:hover{
+  animation: danielle;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+
+
+
