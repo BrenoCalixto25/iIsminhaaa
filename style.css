@@ -15,7 +15,7 @@ header {
 
 header img{
   margin: auto;
-  /*margin-top: 200px;*/
+  margin-top: 50px;
   width: 300px;
   background: linear-gradient(90deg,  rgba(71,87,255,1) 65%, rgba(187,18,190,1) 28%) ;
   display: flex;
@@ -41,10 +41,12 @@ button{
   border:none;
   border-radius:10px;
   cursor:pointer;
+  margin-left: 15px;
+  margin-top: 10px;
 
 }
 
-@keyframes danielle {
+@keyframes ismaela {
   from{
       transform: scale(1);
   }
@@ -55,13 +57,44 @@ button{
 }
 
 button:hover{
-  animation: danielle;
+  animation: ismaela;
   animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
+header div{
+  animation: fromTop .7s .2s backwards;
+}
+
+main section {
+  animation: fromBottom .7s backwards;
+}
+
+@keyframes fromTop {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fromBottom {
+  from{
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
